@@ -1,0 +1,220 @@
+td {
+    background-color: white;
+  border: 1px solid black;  
+}
+
+.table-header {
+    font-weight: bold;
+}
+
+.numeric {
+    text-align: right;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    background-color: lightgray;
+}
+
+header > h1 {
+    width: 100%;
+    text-align: center;
+}
+
+p#race, p#class-level{
+    font-weight: bold;
+
+}
+
+.main-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.section-heading {
+    width: 100%;
+    background-color: white;
+    margin-top: 0px;
+    text-align: center;
+}
+.column0 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.health-container {
+    margin: 1em;
+    background-color: lightgray;
+}
+
+.health tr {
+    height: 3em;
+    vertical-align: text-top;
+    background-color: white;
+}
+
+.health .column0 {
+    width: 10em;
+    font-weight: normal;
+    font-size: 1em;
+}
+
+.health .column1 {
+    width: 7em; 
+}
+
+.table-header td {
+    border: none;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.stat-container {
+    background-color: lightgray;
+    max-width: 20%;
+    width: auto;
+    margin: 1em;
+}
+
+table {
+    border-collapse:collapse;
+}
+
+.power-card {
+    border: 1px solid black;
+    margin: 1%;
+    max-width: 30%;
+    border-collapse: collapse;
+}
+
+.power-card ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 0px;
+    list-style: none;
+    border-top: 1px solid black;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-collapse: collapse;
+}
+
+.power-summary li {
+    list-style: none;
+    padding: 10px;
+}
+
+.power-targeting li {
+    list-style: none;
+    padding: 10px;
+}
+
+li.name {
+    font-weight: bold;
+}
+
+.power-effects {
+    display: block !important;
+    border-top: 1px solid black;
+
+}
+.power-effects li {
+    display: block;
+    padding: 10px !important;
+    border-bottom: 1px solid black;
+}
+
+.power-keywords {
+    padding: 10px;
+}
+
+.page-break {
+    display: none;
+}
+
+@media print {
+    .main-content {
+        display: block;
+        font-size: 12pt;
+        width: 670px;
+    }
+
+    .table-header {
+        font-size: 10pt;
+        font-weight: normal;
+    }
+
+    .section-heading {
+        display: none;
+        font-size: 12pt;
+    }
+
+    .stat-container {
+        display: inline-block;
+        float: left;
+        margin: 15px;
+        width: 200px;
+        background-color: white;
+    }
+
+    div.defenses {
+        min-width: 200px;
+    }
+
+    .health-container {
+        display: inline-block;
+        float: left;
+        margin: 15px;
+        margin-top: 42px;
+        width: 220px;
+        background-color: white;
+    }
+
+    .column0 {
+        font-size: 10pt;
+        font-weight: normal;
+    }
+
+    .column1 {
+        font-size: 10pt;
+    }
+
+    .column2 {
+        font-size: 8pt;
+    }
+
+    .health .column0 {
+        width: 140px;
+    }
+
+    .health .column1 {
+        width: 80px;
+    }
+
+    .power-card .section-heading {
+        display: block;
+    }
+
+    .power-card {
+        font-size: 10px;
+        float: left;
+        min-width: 300px;
+        margin: 15px;
+    }
+
+    .page-break {
+        display: block;
+        page-break-before: always;
+    }
+
+    .power-summary {
+        width: 100%;
+    }
+}
+
+
